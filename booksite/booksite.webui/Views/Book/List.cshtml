@@ -1,0 +1,28 @@
+@model BookListViewModel
+
+
+@{
+    var popularClass = Model.Books.Count>2? "popular":"";
+    var books = Model.Books;
+}
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
+}
+
+@if(books.Count == 0)
+{
+    @await Html.PartialAsync("_nobook")
+}
+else
+{
+    <div class="row">                  
+        @foreach (var book in books)
+        {    
+            <div class="col-md-4">
+                @await Html.PartialAsync("_book", book)   
+        </div>       
+        }   
+    </div>
+}

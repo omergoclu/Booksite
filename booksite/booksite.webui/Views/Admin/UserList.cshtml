@@ -1,0 +1,62 @@
+@model IEnumerable<User>
+
+@section Css
+{
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+}
+@section Scripts
+{
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready( function () {
+            $('#myTable').DataTable();
+        });
+    </script>
+}
+<div class="row">
+    <div class="col-md-12">
+            <h1 class="h3">User List</h1>
+        <hr>
+        <table data-page-length='3' id="myTable" class="table table-bordered mt-3">
+            <thead class="bg-secondary">
+                <tr>
+                    <td>FirstName</td>
+                    <td>LastName</td>
+                    <td>UserName</td>
+                    <td>Email</td>
+                    <td>EmailConfirmed</td>
+                    <td style="width:160px;"></td>
+                </tr>
+            </thead>
+            <tbody class="bg-light">
+                @if(Model.Count()>0)
+                {
+                @foreach (var item in Model)
+                    {
+                    <tr class="@(item.EmailConfirmed?"":"bg-warning")">
+                        <td>@item.FirstName</td>
+                        <td>@item.LastName</td>
+                        <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                        <td>@item.EmailConfirmed</td>
+                        <td>
+                            <a href="/admin/user/@item.Id" class="btn btn-primary btn-sm mr-2">Edit</a>
+                            <form action="/admin/deleteuser" method="POST" style="display: inline-block;">
+                                <input type="hidden" name="userId" value="@item.Id">
+                            <button type="submit" onclick="return confirm('@item.FirstName @item.LastName Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+                            </form>
+                        </td>
+                    </tr> 
+                    }
+                }
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>No Users</h3>
+                    </div>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

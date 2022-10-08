@@ -1,0 +1,50 @@
+@model BookListViewModel
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="dropdown">
+            <a href="/books" class="btn btn-secondary dropdown-toggle list-group-item list-group-item-action" href="/books" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Author
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            @foreach (var item in Model.Authors)
+            {
+                <a class="list-group-item list-group-item-action" href="/books/author/@item.AuthorId">@item.NameLastName</a>
+            }
+            </div>
+        </div>
+        <hr>
+        @await Component.InvokeAsync("Categories")
+        <hr>
+        <div class="dropdown">
+            <a href="/books" class="btn btn-secondary dropdown-toggle list-group-item list-group-item-action" href="/books" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All Publisher
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            @foreach (var item in Model.Publishers)
+            {
+                <a class="list-group-item list-group-item-action" href="/books/publisher/@item.PublisherId">@item.Name</a>
+            }
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="row">                  
+            @foreach (var book in Model.Books)
+            {    
+                <div class="col-md-4">
+                    @await Html.PartialAsync("_book", book)   
+                </div>       
+            }   
+        </div>
+        
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+}

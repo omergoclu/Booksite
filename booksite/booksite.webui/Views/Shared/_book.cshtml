@@ -1,0 +1,24 @@
+@model Book
+<div class="card mb-2">
+    <a asp-controller="shop" asp-action="Details" asp-route-url="@Model.Url" ><img class="card-img-top img-fluid" src="~/img/@Model.ImageUrl"></a>
+    
+    <div class="card-body">
+      <a asp-controller="shop" asp-action="Details" asp-route-url="@Model.Url"><h5 class="card-title">@Model.Name</h5></a>
+        <p>
+            @Model.Price TL
+        </p>
+        
+    </div>
+  <div class="card-body">
+    <a asp-controller="shop" asp-action="Details" asp-route-url="@Model.Url" class="btn btn-primary btn-sm">Details</a>
+
+    @if(User.Identity.IsAuthenticated)
+    {
+      <form asp-controller="Cart" asp-action="AddToCart" method="POST" style="display: inline;">
+        <input type="hidden" name="BookId" value="@Model.BookId">
+        <input type="hidden" name="quantity" value="1">
+        <button class="btn btn-primary btn-sm" type="submit">Add to Cart</button>
+      </form>
+    }
+  </div>
+</div>

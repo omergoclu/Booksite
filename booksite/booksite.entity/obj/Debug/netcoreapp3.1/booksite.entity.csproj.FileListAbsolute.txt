@@ -1,0 +1,9 @@
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\bin\Debug\netcoreapp3.1\booksite.entity.deps.json
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\bin\Debug\netcoreapp3.1\booksite.entity.dll
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\bin\Debug\netcoreapp3.1\booksite.entity.pdb
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.AssemblyInfoInputs.cache
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.AssemblyInfo.cs
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.dll
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.pdb
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.entity\obj\Debug\netcoreapp3.1\booksite.entity.csprojAssemblyReference.cache

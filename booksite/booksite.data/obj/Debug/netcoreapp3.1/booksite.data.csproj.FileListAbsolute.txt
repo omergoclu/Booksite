@@ -1,0 +1,15 @@
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.data.deps.json
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.data.runtimeconfig.json
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.data.runtimeconfig.dev.json
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.data.dll
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.data.pdb
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.entity.dll
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\bin\Debug\netcoreapp3.1\booksite.entity.pdb
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.AssemblyInfoInputs.cache
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.AssemblyInfo.cs
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.csproj.CoreCompileInputs.cache
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.csproj.CopyComplete
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.dll
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.pdb
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.genruntimeconfig.cache
+C:\Users\Ömer Göçlü\Desktop\booksite\booksite.data\obj\Debug\netcoreapp3.1\booksite.data.csprojAssemblyReference.cache

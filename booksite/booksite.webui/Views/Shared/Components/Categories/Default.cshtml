@@ -1,0 +1,17 @@
+@model List<Category>
+<div class="dropdown">
+    <a href="/books" class="btn btn-secondary dropdown-toggle list-group-item list-group-item-action" href="/books" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        All Category
+    </a>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        @foreach (var item in Model)
+        {
+            <a asp-controller="Shop"
+            asp-action="List" 
+            asp-route-category="@item.Url"
+            class="list-group-item list-group-item-action @(ViewBag.SelectedCategory == item.Url?"active":"")">
+                @item.Name
+            </a>
+        }
+    </div>
+</div>
